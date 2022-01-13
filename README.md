@@ -16,12 +16,28 @@ wget https://download2.gluonhq.com/openjfx/17.0.1/openjfx-17.0.1_linux-arm32_bin
 
 ## Setup Windows Dev Env
 Setup Eclipse Adoptium JDK 17
+
 Setup Eclipse IDE
+
 Setup Maven
+
 Download Maven
+
 Extract Zip to "C:\Program Files\"
+
 Edit Environment Variables
+
 Add User Variable JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot"
+
 Add User Variable MAVEN_HOME "C:\Program Files\apache-maven-3.8.4"
+
 Add User Variable M2_HOME "C:\Program Files\apache-maven-3.8.4"
+
 Add System Path Variable "C:\Program Files\apache-maven-3.8.4\bin\"
+
+## JavaFX Test
+```POWERSHELL
+set PATH_TO_FX "C:\Program Files\javafx-sdk-17.0.1\lib"
+javac --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX.java
+java --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX
+```
